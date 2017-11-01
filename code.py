@@ -3,9 +3,9 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from mpl_toolkits.mplot3d import Axes3D
-fn = r'C:\Users\DELL I5558\Desktop\Python\NSW-ER01.csv'
+fn = r'C:\Users\DELL I5558\Desktop\Python\ELEC5222\kMeans\NSW-ER01.csv'
 my_data = genfromtxt(fn, delimiter=',')
-model = KMeans(n_clusters=4)
+model = KMeans(n_clusters=8)
 model.fit(my_data)
 labels = model.predict(my_data)
 print(labels)
